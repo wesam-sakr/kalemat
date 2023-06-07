@@ -219,7 +219,6 @@ section {
 
 .Stars::before {
   content: "★★★★★";
-  background: -webkit-gradient(linear, right top, left top, from(#FFF700), to(#E5E5E5));
   background: linear-gradient(-90deg, #FFF700 var(--percent), #E5E5E5 var(--percent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1650,10 +1649,6 @@ section {
     width: 100%;
     margin-bottom: 1rem;
   }
-}
-
-.contactUs {
-  /* form */
 }
 
 .contactUs .contact-data .social {
