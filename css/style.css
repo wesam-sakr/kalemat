@@ -2022,6 +2022,7 @@ section {
   gap: 0px;
   background-color: #fff;
   border-radius: 50%;
+  padding: 10px;
 }
 
 .auth-page .auth-nav .nav .nav-link .icon img {
@@ -2034,6 +2035,16 @@ section {
 
 .auth-page .auth-nav .nav .nav-link.active .icon {
   border-right: 2px solid #CD6B5A;
+}
+
+.auth-page .auth-nav .nav .nav-link.active .icon svg.aboutA path,
+.auth-page .auth-nav .nav .nav-link.active .icon svg.cat path,
+.auth-page .auth-nav .nav .nav-link.active .icon svg.lv path{
+  fill: #CD6B5A;
+}
+.auth-page .auth-nav .nav .nav-link.active .icon svg.allBooks path,
+.auth-page .auth-nav .nav .nav-link.active .icon svg.rate path{
+  stroke: #CD6B5A;
 }
 
 .auth-page .grid-authors {
