@@ -3018,8 +3018,8 @@ section {
     right: 0 !important;
   }
   .single-publish .item {
-    width: 50px;
-    height: 50px;
+    width: 140px;
+    height: 140px;
   }
   .single-publish .tab-content .tab-pane .publiah-dar {
     width: 95%;
@@ -3203,6 +3203,13 @@ section {
 }
 
 @media (max-width: 991.8px) {
+  .navbar .nav-link {
+    width: fit-content;
+  }
+  .dropdown-menu[data-bs-popper] {
+    transform: translateX(0%);
+    width: fit-content;
+}
   .navbar .navbar-toggler {
     font-size: 18px;
   }
@@ -3836,8 +3843,8 @@ section {
 }
 
 .ourBooks .nav-pills .nav-link.active::after {
-  font-family: 'Bootstrap-icons';
-  content: "\F5D4";
+  font-family: "Font Awesome 5 Free"; 
+  content: "\f141";
   font-size: 40px;
   margin-top: -20px;
   height: 25px;
