@@ -2659,6 +2659,10 @@ section {
   border-radius: 10px;
   overflow: hidden;
 }
+.single-news .news-img img{
+  object-fit: cover;
+}
+
 
 .single-news .news-details p {
   color: #707070;
@@ -3035,6 +3039,9 @@ section {
   .single-publish .tab-content .tab-pane .publiah-dar {
     width: 95%;
   }
+  .login .login-content .image {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3085,6 +3092,20 @@ section {
   }
   .single-publish .nav-pills .nav-link .bi {
     margin-top: 5px;
+  }
+  .single-news .news-img {
+    height: 50vh;
+  }
+  .login .login-content {
+    padding: 50px 16px;
+  }
+  .login .login-content .header-links {
+    font-size: 18px;
+  }
+  .login .login-content .buttons button {
+    width: calc(95% / 3);
+    padding: 9px 6px;
+    font-size: 14px;
   }
 }
 
