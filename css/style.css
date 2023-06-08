@@ -3806,7 +3806,10 @@ section {
 .Book_store {
   margin-top: 40px;
 }
-
+.Book_store .timeline .diamond{
+  margin: 10px auto;
+  margin-bottom: 45px;
+}
 .Book_store .diamond-section {
   width: 750px;
   max-width: 100%;
