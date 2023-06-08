@@ -2897,16 +2897,26 @@ section {
           align-items: center;
 }
 
+.single-publish  .nav .nav-link .bi svg.aboutA path{
+ fill: #fff;
+}
+.single-publish  .nav .nav-link.active .bi svg.aboutA path{
+  fill: #cd6b5a;
+ }
+ .single-publish .nav .nav-link.active .bi svg.str path{
+  stroke: #CD6B5A;
+}
+.single-publish .nav .nav-link .bi svg.str path{
+  stroke: #fff;
+}
 .single-publish .nav-pills .nav-link .bi {
   width: 55px;
   height: 59px;
-  padding: 10px;
+  padding: 12px;
   background: transparent;
   border-radius: 50%;
-  display: -ms-grid;
   display: grid;
-  place-items: center;
-  font-size: 24px;
+    place-items: center;
 }
 
 .single-publish .nav-pills .nav-link h4 {
