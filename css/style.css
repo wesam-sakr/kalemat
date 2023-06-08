@@ -3320,10 +3320,10 @@ section {
   .navbar .container {
     gap: 0;
   }
-  .navbar .option .login {
+  /* .navbar .option .login {
     padding: 5px 1.1rem;
     font-size: 12px;
-  }
+  } */
 }
 
 #jobModal .modal-content {
