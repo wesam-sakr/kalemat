@@ -3927,9 +3927,20 @@ section {
   height: 10px;
   border-radius: 50%;
   background: #fff;
-  top: 14px;
+  top: 10px;
+  z-index: 111;
 }
+.counter .circle canvas{
+  position: absolute;
+  top: 13px;
+  z-index: 0;
+}
+.counter .circle strong{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
 
+}
 .counter .circle .charts {
   display: -webkit-box;
   display: -ms-flexbox;

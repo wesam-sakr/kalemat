@@ -248,6 +248,55 @@ $(".show-pass").click(function () {
   // niceSelect
   $('select').niceSelect();
 
+/**
+
+*Exampe from https://kottenator.github.io/jquery-circle-progress/
+*/
+function scrollAction() {
+  // Get the current scroll position
+  var scrollPosition = window.pageYOffset;
+
+  // Check if the scroll position is greater than or equal to 500px
+  if (scrollPosition >= 500) {
+    // Perform your desired action here
+    var progressBarOptions = {
+      startAngle: -1.55,
+      size: 110,
+      thickness:2,
+        
+        fill: {
+        color: '#fff'
+      }
+    }
+    
+    $('.circle').circleProgress(progressBarOptions).on('circle-animation-progress');
+    $('#circle-a').circleProgress({
+      value : 800,
+    }).on('circle-animation-progress', function(event, progress,stepValue) {
+      $(this).find('strong').html(Math.round( stepValue));
+    });
+    $('#circle-b').circleProgress({
+      value : 500,
+    }).on('circle-animation-progress', function(event, progress,stepValue) {
+      $(this).find('strong').html(Math.round( stepValue));
+    });
+   
+    $('#circle-c').circleProgress({
+      value : 80,
+    }).on('circle-animation-progress', function(event, progress,stepValue) {
+      $(this).find('strong').html(Math.round( stepValue));
+    });
+   
+    $('#circle-d').circleProgress({
+      value : 55,
+    }).on('circle-animation-progress', function(event, progress,stepValue) {
+      $(this).find('strong').html(Math.round( stepValue));
+    });
+   
+   
+  }
+}
+
   // wow.js init
   new WOW().init();
 

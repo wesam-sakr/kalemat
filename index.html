@@ -47,7 +47,7 @@
     <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
   </head>
 
-  <body>
+  <body onscroll="scrollAction()">
     <div id="loading">
       <div class="loader logo">
         <svg id="e0N9viMZnF61" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.66 110" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
@@ -1049,48 +1049,37 @@
           class="d-flex justify-content-around align-items-center flex-sm-row flex-column"
         >
           <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay="0">
-            <div class="circle">
-              <div
-                class="charts"
-                data-progress="800"
-                style="--progress: 80%"
-              ></div>
+
+            <div class="circle" id="circle-a">
+              <strong></strong>
             </div>
             <h5>دار نشر</h5>
           </div>
           <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".2s">
-            <div class="circle">
-              <div
-                class="charts"
-                data-progress="500"
-                style="--progress: 50%"
-              ></div>
+                 <div class="circle" id="circle-b">
+              <strong></strong>
             </div>
+          
             <h5>مؤلف</h5>
           </div>
           <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".4s">
-            <div class="circle">
-              <div
-                class="charts"
-                data-progress="55"
-                style="--progress: 5%"
-              ></div>
+            <div class="circle" id="circle-c">
+              <strong></strong>
             </div>
             <h5>مشروع</h5>
           </div>
           <div class="text-center wow animate__lightSpeedInLeft" data-wow-delay=".6s">
-            <div class="circle">
-              <div
-                class="charts"
-                data-progress="80"
-                style="--progress: 8%"
-              ></div>
+        <div class="circle charts" id="circle-d">
+              <strong></strong>
             </div>
             <h5>كتب ترجمه</h5>
           </div>
         </div>
       </div>
     </section>
+    <div class="counter">
+    
+    </div>
     <!-- ======= discussion ======= -->
     <section class="discussion">
       <div class="shaps">
@@ -1292,7 +1281,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- purecount -->
     <script src="js/jquery.rateyo.min.js"></script>
-    <script src="js/PureCounter.js"></script>
+    <script src="js/circle-progress.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
