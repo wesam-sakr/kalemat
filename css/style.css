@@ -4724,11 +4724,18 @@ footer ul .social a {
   transition: .3s;
   color: #fff;
 }
+.notifi.new .date{
+  color: #fff;
+}
+.notifi.new:hover .date{
+  color: #6E6E6E;
+}
 .notifi .date{
   position: absolute;
   bottom: 2px;
   left: 10px;
   color: #6E6E6E;
+  transition: .4s;
 }
 
 .notifi .notifi-img {
