@@ -2936,6 +2936,9 @@ section {
   top: 25px;
   right: -26px;
 }
+.single-publish .nav-pills .nav-link .bi svg{
+  width: 100%;
+}
 
 .single-publish .nav-pills .nav-link.active h4, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link h4 {
   margin-right: 0px;
@@ -3026,14 +3029,14 @@ section {
     padding-right: 0 !important;
   }
   .single-publish .nav-pills .nav-link.active {
-    padding: 40px 0;
-  }
+    padding: 25px 0;
+}
   .single-publish .nav-pills .nav-link.active .bi, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link .bi {
     position: relative;
     top: 0;
     right: 0;
     width: 50px;
-    height: 25px;
+    height: unset;
   }
   .single-publish .nav-pills .nav-link h4 {
     margin-right: 5px !important;
@@ -4501,6 +4504,9 @@ section {
   .discussion .shaps {
     top: -150px;
     width: 65%;
+  }
+  .single-publish .nav-pills .nav-link .bi {
+    padding: 0 8px;
   }
 }
 
