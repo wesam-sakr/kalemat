@@ -3501,6 +3501,7 @@ section {
   margin-top: 1.5rem;
   border: 1px solid #fff;
   transition: 0.4s;
+  position: relative;
 }
 .header-wrapper .header-contant .search:hover{
   border: 1px solid #D0735E;
