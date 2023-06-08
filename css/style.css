@@ -3771,6 +3771,13 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 18px;
   }
+  .discussion,.books {
+    padding: 1rem 0 80px 0 ;
+    clip-path: polygon(50% 45px, 0 0, 0 100%, 100% 100%, 100% 0%) !important;
+  }
+  .discussion{
+    padding-top: 50px !important;
+  }
 }
 
 .Book_store {
@@ -3936,8 +3943,30 @@ section {
 
 @media (max-width: 576px) {
   .ourBooks img.img-most {
-    height: 380px;
+    /* height: 380px; */
+    height: 180px;
   }
+  .ourBooks h5 {
+    font-size: 16px;
+  }
+  .Book_store .contain-store .texts p {
+    font-size: 16px;
+  }
+  .Book_store .contain-store .texts a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 185px;
+    height: unset;
+    padding: 10px 0;
+  }
+  .single_book_single .owl-nav {
+    bottom: -9.5%;
+    right: 50%;
+    transform: translateX(50%);
+}
 }
 
 .ourBooks a {
