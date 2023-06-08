@@ -8,7 +8,7 @@
     <link
       rel="shortcut icon"
       type="image/png"
-      href="images/Group 75656.png"
+      href="images/logo-min.png"
     />
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -155,14 +155,49 @@
 
             
             <ul class="option navbar-nav text-dark wow animate__backInLeft" style="flex-direction: row !important;" data-wow-duration="2s" data-wow-delay=".5s">
-                <li class="nav-item">
-                  <a role="button" id="lang" class="nav-link">
-                    <span class="px-2">EN</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="login hover-btn" href="login.html">التسجيل</a>
-                </li>
+              <li class="nav-item">
+                <a role="button" id="lang" class="nav-link p-0">
+                  <span>EN</span>
+                </a>
+              </li>
+              <!-- if auth -->
+              <li class="d-none nav-item">
+                <a class="login hover-btn" href="login.html">التسجيل</a>
+              </li>
+              <!-- else -->
+              <li id="notif" class="auth has-menu">
+                <a role="button">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+                <div class="sub-menu">
+                  <div class="notifi">
+                    <a class="link" href="notifi.html"></a>
+                    <div class="notifi-img">
+                      <img src="images/logo-min.png" alt="">
+                    </div>
+                    <p class="cut-text">
+                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                    </p>
+                    <p class="date mb-0">22/01/2022</p>
+                  </div>
+                  <div class="notifi">
+                    <a class="link" href="notifi.html"></a>
+                    <div class="notifi-img">
+                      <img src="images/logo-min.png" alt="">
+                    </div>
+                    <p class="cut-text">
+                      وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
+                    </p>
+                    <p class="date mb-0">22/01/2022</p>
+                  </div>
+                </div>
+                <span class="count">1</span>
+              </li>
+              <li class="auth">
+                <a href="profile.html">
+                  <i class="fa-solid fa-user"></i>
+                </a>
+              </li>
             </ul>
         </div>
     </nav>
