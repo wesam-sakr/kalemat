@@ -2104,7 +2104,7 @@ section {
 }
 
 .auth-page .category .books {
-  -webkit-clip-path: unset;
+  -webkit-clip-path: unset !important;
   clip-path: unset;
   padding: 0;
   background-color: transparent;
