@@ -188,7 +188,7 @@ $(document).ready(function () {
   // toggle fav item
   $(".fav").click(function () {
     $(this).toggleClass("added");
-    $(this).toggleClass("bi-heart bi-heart-fill");
+    $(this).toggleClass("fa-regular fa-solid");
     console.log(this)
 })
 $(".show-pass").click(function () {

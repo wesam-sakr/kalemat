@@ -1532,7 +1532,7 @@ section {
   line-height: 2;
 }
 
-.rate .bi {
+.rate i.fa-solid{
   color: #FFD500;
 }
 
@@ -2052,7 +2052,7 @@ section {
   top: 0;
   right: 50%;
   -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
 }
 
 .auth-page .grid-authors .author-cover {
@@ -3126,6 +3126,58 @@ section {
   color: #4E4E4E !important;
   position: relative;
 }
+.navbar .auth {
+  position: relative;
+}
+.navbar .auth a {
+  color: #CD6B5A !important;
+  width: 35px;
+  height: 35px;
+  background-color: #cd6b5a17;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: -50px;
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 300px;
+  font-size: 12px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  z-index: 9990;
+  background: #fff;
+  box-shadow: 0px 0px 15px #00000029;
+  overflow: hidden;
+}
+.navbar .auth.has-menu:hover .sub-menu {
+  display: block;
+}
+.navbar .sub-menu .notifi .notifi-img{
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.count {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  background-color: #CD6B5A;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 10px;
+  font-weight: normal;
+}
 
 .navbar-collapse .nav-link::before {
   content: "";
@@ -3166,7 +3218,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0px;
+  gap: 12px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -3536,7 +3588,7 @@ section {
 }
 
 .header-wrapper .header-video .play-icon i, .header-wrapper .header-video .pause-icon i {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 0;
   color: #CD6B5A;
   -webkit-transform: rotate(180deg);
@@ -3719,6 +3771,13 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 18px;
   }
+  .discussion,.books {
+    padding: 1rem 0 80px 0 ;
+    clip-path: polygon(50% 45px, 0 0, 0 100%, 100% 100%, 100% 0%) !important;
+  }
+  .discussion{
+    padding-top: 50px !important;
+  }
 }
 
 .Book_store {
@@ -3750,7 +3809,7 @@ section {
   background: #CD6B5A;
   display: inline-block;
   position: relative;
-  top: 17px;
+  top: 14px;
 }
 
 .Book_store .contain-store {
@@ -3851,16 +3910,20 @@ section {
 .ourBooks .nav-pills .nav-link.active, .ourBooks .nav-pills .nav-pills .show > .nav-link {
   color: #CD6B5A;
   background-color: transparent;
+  position: relative;
 }
 
 .ourBooks .nav-pills .nav-link.active::after {
-  font-family: "Font Awesome 5 Free"; 
-  content: "\f141";
+  content: "";
   font-size: 40px;
   margin-top: -20px;
   height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23cd6b5a%7D%3C/style%3E%3Cpath d='M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 28px;
+    height: 24px;
+  bottom: -4px;
 }
-
 .ourBooks img.img-most {
   height: 330px;
   border-radius: 20px;
@@ -3880,8 +3943,30 @@ section {
 
 @media (max-width: 576px) {
   .ourBooks img.img-most {
-    height: 380px;
+    /* height: 380px; */
+    height: 180px;
   }
+  .ourBooks h5 {
+    font-size: 16px;
+  }
+  .Book_store .contain-store .texts p {
+    font-size: 16px;
+  }
+  .Book_store .contain-store .texts a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 185px;
+    height: unset;
+    padding: 10px 0;
+  }
+  .single_book_single .owl-nav {
+    bottom: -9.5%;
+    right: 50%;
+    transform: translateX(50%);
+}
 }
 
 .ourBooks a {
@@ -4483,9 +4568,9 @@ section {
   margin-left: 0;
   margin-right: auto;
   background-image: none;
-  content: '\F4FE';
+  content: '\2b';
   font-family: 'Bootstrap-icons';
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
   height: auto;
 }
@@ -4497,7 +4582,8 @@ section {
 }
 
 .question .accordion-item .accordion-button:not(.collapsed)::after {
-  content: '\F2EA';
+  font-family: "FontAwesome";
+  content: '\f068';
 }
 
 .question .accordion-item .accordion-body {
@@ -4616,4 +4702,64 @@ footer ul .social a {
 .lower-footer img {
   width: 120px;
 }
-/*# sourceMappingURL=style.css.map */
+
+
+.notifi {
+  padding: 0.7rem !important;
+  border-radius: 0;
+  border-bottom: 1px solid #b1b1b13a;
+  position: relative;
+  transition: .4s;
+  z-index: 8;
+  display: flex;
+  padding-bottom: 1.5rem !important;
+  gap: 8px;
+  align-items: center;
+}
+.notifi:last-child{
+  border-bottom: unset;
+}
+.notifi.new {
+  background-color: #cd6b5abe;
+  transition: .3s;
+  color: #fff;
+}
+.notifi .date{
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: #6E6E6E;
+}
+
+.notifi .notifi-img {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 3px 12px 0px #01957238;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #CD6B5A;
+  object-fit: contain;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notifi .notifi-img img{
+  object-fit: contain;
+  width: 100%;
+}
+
+.notifi .cut-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  -webkit-line-clamp: 2;
+  margin: 0%;
+  width: calc(100% - 40px);
+}
+.notifi:hover {
+  color: #CD6B5A;
+  background-color: #cd6b5a17;
+}
