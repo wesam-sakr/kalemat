@@ -2037,15 +2037,16 @@ section {
   border-right: 2px solid #CD6B5A;
 }
 
-.auth-page .auth-nav .nav .nav-link.active .icon svg.aboutA path,
-.auth-page .auth-nav .nav .nav-link.active .icon svg.cat path,
-.auth-page .auth-nav .nav .nav-link.active .icon svg.lv path{
+ .nav .nav-link.active .icon svg.aboutA path,
+ .nav .nav-link.active .icon svg.cat path,
+.nav .nav-link.active .icon svg.lv path{
   fill: #CD6B5A;
 }
-.auth-page .auth-nav .nav .nav-link.active .icon svg.allBooks path,
-.auth-page .auth-nav .nav .nav-link.active .icon svg.rate path{
+ .nav .nav-link.active .icon svg.allBooks path,
+ .nav .nav-link.active .icon svg.rate path{
   stroke: #CD6B5A;
 }
+
 
 .auth-page .grid-authors {
   position: absolute;
@@ -2899,6 +2900,7 @@ section {
 .single-publish .nav-pills .nav-link .bi {
   width: 55px;
   height: 59px;
+  padding: 10px;
   background: transparent;
   border-radius: 50%;
   display: -ms-grid;
