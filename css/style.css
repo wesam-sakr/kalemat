@@ -3588,7 +3588,7 @@ section {
 }
 
 .header-wrapper .header-video .play-icon i, .header-wrapper .header-video .pause-icon i {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 0;
   color: #CD6B5A;
   -webkit-transform: rotate(180deg);
@@ -3802,7 +3802,7 @@ section {
   background: #CD6B5A;
   display: inline-block;
   position: relative;
-  top: 17px;
+  top: 14px;
 }
 
 .Book_store .contain-store {
@@ -3903,16 +3903,20 @@ section {
 .ourBooks .nav-pills .nav-link.active, .ourBooks .nav-pills .nav-pills .show > .nav-link {
   color: #CD6B5A;
   background-color: transparent;
+  position: relative;
 }
 
 .ourBooks .nav-pills .nav-link.active::after {
-  font-family: "Font Awesome 5 Free"; 
-  content: "\f141";
+  content: "";
   font-size: 40px;
   margin-top: -20px;
   height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='2em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cstyle%3Esvg%7Bfill:%23cd6b5a%7D%3C/style%3E%3Cpath d='M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 28px;
+    height: 24px;
+  bottom: -4px;
 }
-
 .ourBooks img.img-most {
   height: 330px;
   border-radius: 20px;
