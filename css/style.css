@@ -3513,6 +3513,7 @@ section {
   margin-top: 1.5rem;
   border: 1px solid #fff;
   transition: 0.4s;
+  position: relative;
 }
 .header-wrapper .header-contant .search:hover{
   border: 1px solid #D0735E;
@@ -3819,33 +3820,6 @@ section {
 .Book_store .timeline .diamond{
   margin: 10px auto;
   margin-bottom: 45px;
-}
-.Book_store .diamond-section {
-  width: 750px;
-  max-width: 100%;
-  padding-bottom: 4vw;
-  margin: auto;
-}
-
-.Book_store .diamond-section .diamond {
-  color: #CD6B5A;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.Book_store .diamond-section .diamond i {
-  font-size: 14px;
-}
-
-.Book_store .diamond-section span {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #CD6B5A;
-  display: inline-block;
-  position: relative;
-  top: 14px;
 }
 
 .Book_store .contain-store {
@@ -4267,7 +4241,6 @@ section {
   font-weight: 600;
   padding-top: 15px;
 }
-
 .most_recent .owl-carousel {
   margin-right: 4vw;
 }
@@ -4367,9 +4340,12 @@ section {
 
 @media (max-width: 767px) {
   .single_book_single .owl-nav {
-    bottom: -12.5%;
-    right: auto;
-    left: 0;
+    bottom: -10.5%;
+    right: 50%;
+    left: 50%;
+  }
+  .single_book_single .owl-nav button.owl-prev {
+    margin-left: 5px;
   }
 }
 
