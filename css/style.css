@@ -2908,7 +2908,7 @@ section {
 }
 
 .single-publish .nav-pills .nav-link h4 {
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 .single-publish .nav-pills .nav-link.active, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link {
@@ -2926,7 +2926,7 @@ section {
 }
 
 .single-publish .nav-pills .nav-link.active h4, .single-publish .nav-pills .nav-link .nav-pills .show > .nav-link h4 {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .single-publish .nav-pills .nav-link.active::after {
