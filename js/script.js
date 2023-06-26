@@ -195,7 +195,7 @@ $(document).ready(function () {
     console.log(this)
 })
 $(".show-pass").click(function () {
-  $(this).find('i').toggleClass("fa-eye-slash fa-eye");
+  $(this).find('i').toggleClass("bi-eye-slash bi-eye");
   var input = $($(this).attr("toggle"));
   if (input.attr("type") == "password") {
       input.attr("type", "text");
