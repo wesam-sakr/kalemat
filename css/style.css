@@ -3983,9 +3983,8 @@ section {
 }
 
 .ourBooks a {
-  font-size: 24px;
   color: #CD6B5A;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .ourBooks h5 {
