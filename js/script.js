@@ -210,7 +210,7 @@ $(".show-pass").click(function () {
   $(".follow").click(function () {
     $(this).toggleClass("unfollow");
     $(this).find('i').toggleClass("fa-thumbs-up fa-thumbs-down");
-    $(this).find('span').toggleText('متابعة','الغاء المتابعة');
+    $(this).find('span').toggleText('متابعة','إلغاء المتابعة');
     console.log(this)
   })
 
